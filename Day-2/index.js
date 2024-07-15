@@ -72,7 +72,7 @@ console.log(result1); // Logs false because condition is true
 // Task-14💡
 let myNumber = -5;
 
-let output = (number >= 0) ? "Positive" : "Negative";
+let output = (myNumber >= 0) ? "Positive" : "Negative";
 
 console.log(result); // Logs "Negative" because number is -5
 
