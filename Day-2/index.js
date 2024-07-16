@@ -52,7 +52,7 @@ console.log(`Is ${score1} === ${score2} =`, score1 === score2);  //Is 55 === 30 
 let age = 18;
 let document = "Driving license";
 if (age >= 18 && document === "Driving license") {
-    console.log("Now you can Drive");               //OUTPUT = Now you can Drive
+    console.log("Now you can Drive!");               //OUTPUT = Now you can Drive!
 }
 
 // Task-12

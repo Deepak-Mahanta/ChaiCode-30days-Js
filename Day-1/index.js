@@ -2,10 +2,10 @@
 
 // Task 1:
 var num = 10;
-console.log(num); //op-10
+console.log(num); //op-10 
 
 // Task 2:
-let myName = 'Deepak';
+let myName = "Deepak";
 console.log(myName); //op- Deepak
 
 //Activity - 2:Constant Declaration

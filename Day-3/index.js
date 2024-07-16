@@ -9,7 +9,7 @@
 
 // let number = 10;         //10 is a positive number!
 // let number = 0;         //Zero!
-let number = -5;          // -5 is a negative number!  
+let number = -5;          //-5 is a negative number!  
 if (number > 0) {
     console.log(`${number} is a positive number!`);
 } else if (number < 0) {
