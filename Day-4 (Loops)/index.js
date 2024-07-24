@@ -110,6 +110,40 @@ function factorial(n) {
   console.log(`Factorial of ${giveNumber} is ${factorial(giveNumber)}`);
 
   // output - Factorial of 5 is 120
+
+  // Task - 7
+  // Define the number of rows for the pattern
+const numRows = 5;
+
+// Outer loop for rows
+for (let i = 1; i <= numRows; i++) {
+    let row = '';
+    
+    // Inner loop for printing asterisks
+    for (let j = 1; j <= i; j++) {
+        row += '*';
+    }
+    
+    console.log(row);
+}
+/*             
+output--
+*
+**
+***
+****
+*****
+*/
+
+// Task - 8
+const arr1 = [1,2,3,4,5,6,7,8,9,10]
+for (let count = 1; count <= arr1.length; count++) {
+   if (count === 5) {
+    continue;
+   }
+   console.log(count);  // it skip 5 
+  
+}  
   
 
 
