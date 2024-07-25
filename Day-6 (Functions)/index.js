@@ -77,8 +77,6 @@ console.log(result3); // Outputs: false
 function multiply(a, b = 2) {
     return a * b;
 }
-
-// Example usage:
 const result4 = multiply(5, 3);
 console.log(result4); // Outputs: 15 ( b=2 override by new value 3)
 
@@ -86,9 +84,47 @@ const result5 = multiply(7);
 console.log(result5); // Outputs: 14 (since the default value of b is 2, it autonedically multiply with 7)
 
 // Task 8: Write a function that takes a person's name and age and returns a greeting message. Provide a default value for the age.
+ 
+function details(name, age=30) {
+    return `hello ${name} you're now ${age}`
+}
+const greeting = details("Deepak", 21);  //hello Deepak you're now 21
+console.log(greeting);
+const greeting1 = details("Deepak");  //hello Deepak you're now 30 (you see here default age value = 30)
+console.log(greeting1);
+
 
 // Activity 5: Higher-Order Functions
 
 // • Task 9: Write a higher-order function that takes a function and a number, and calls the function that many times.
 
+function repeatFunction(fn, times) {
+    for (let i = 0; i < times; i++) {
+        fn();
+    }
+}
+
+// Example usage:
+const sayHello = () => console.log('Hello!');
+
+repeatFunction(sayHello, 3);
+// Outputs:
+// Hello!
+// Hello!
+// Hello!
+
+
 // • Task 10: Write a higher-order function that takes two functions and a value, applies the first function to the value, and then applies the second function to the result.
+
+function composeFunctions(fn1, fn2, value) {
+    return fn2(fn1(value));
+}
+
+// Example usage:
+const addOne = x => x + 1;
+const square = x => x * x;
+
+const result7 = composeFunctions(addOne, square, 2);
+console.log(result7); // Outputs: 9 (first addOne(2) = 3, then square(3) = 9)
+ 
+// 💡💡💡in JavaScript, if an arrow function has exactly one parameter, you can omit the parentheses around the parameter.
