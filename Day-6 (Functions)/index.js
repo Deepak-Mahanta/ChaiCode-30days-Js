@@ -122,9 +122,9 @@ function composeFunctions(fn1, fn2, value) {
 
 // Example usage:
 const addOne = x => x + 1;
-const square = x => x * x;
+const square1 = x => x * x;
 
-const result7 = composeFunctions(addOne, square, 2);
+const result7 = composeFunctions(addOne, square1, 2);
 console.log(result7); // Outputs: 9 (first addOne(2) = 3, then square(3) = 9)
  
 // 💡💡💡in JavaScript, if an arrow function has exactly one parameter, you can omit the parentheses around the parameter.
